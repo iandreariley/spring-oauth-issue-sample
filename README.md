@@ -4,4 +4,4 @@ This is just a modification of the spring security oauth tutorial [here](https:/
 
 ## Issue
 
-The ```@PostConstruct``` method in our implementation of ```ClientDetails``` is called twice: Once during the creation of the spring context, and once on the first attempt to access a token endpoint, which we do with the following command: ```curl acme:acmesecret@localhost:8080/oauth/token -d grant_type=password -d username=user -d password=password```. Building this project, running it and issuing the above command should be enough to reproduce the issue.
+The ```@PostConstruct``` method in our implementation of ```ClientDetails``` is called twice: Once during the creation of the spring context, and once on the first attempt to access a token endpoint, which we do with the following command: ```
